@@ -1,0 +1,140 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+.whole-messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow: auto;
+  margin: 0 0 20px;
+  margin-bottom: 100px;
+}
+.messages-container {
+  height: 100%;
+}
+.chat-room-title h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 0px 0px;
+  background-color: #1877f2;
+  border-radius: 20px;
+}
+.msg-data {
+  border: 1px solid #f1f5f9;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+}
+.meta-data-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.img-container img {
+  width: 30px;
+  border-radius: 50%;
+}
+.author {
+  font-size: 14px;
+  font-weight: bold;
+}
+.message-msg {
+  padding: 5px 50px;
+}
+/* T Y P E */
+.typezone {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 90px;
+  z-index: 99;
+  border: none;
+  outline: none;
+}
+.textarea-msg::placeholder {
+  color: #f1f5f9;
+  font-weight: bolder;
+}
+.textarea-msg,
+.textarea-msg:hover {
+  position: fixed;
+  bottom: 0px;
+  left: 25%;
+  right: 8%;
+  width: 65%;
+  height: 80px;
+  z-index: 100;
+  background: #1877f2;
+  border: none;
+  outline: none;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  color: #f1f5f9;
+  font-weight: 400;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+  resize: none;
+  z-index: 200;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.565, -0.26, 0.255, 1.41);
+}
+.textarea-msg:focus {
+  height: 100px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.send {
+  position: fixed;
+  display: block;
+  bottom: 0px;
+  right: 20px;
+  width: 10%;
+  height: 80px;
+  border: none;
+  outline: none;
+  z-index: 100;
+  cursor: pointer;
+  color: #1877f2;
+  font-weight: bolder;
+  background-color: transparent;
+}
+.send:active {
+  opacity: 0.85;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+  }
+  .msg-data {
+    font-size: 12px;
+  }
+  .textarea-msg,
+  .textarea-msg:hover {
+    width: 60%;
+    left: 25%;
+  }
+
+  .textarea-msg:focus {
+    height: 85px;
+  }
+
+  .chat-room-title h4 {
+    font-size: 10px;
+    font-weight: bolder;
+    width: 100%;
+  }
+  svg {
+    width: 20px;
+  }
+}

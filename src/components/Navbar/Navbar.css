@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+.container-social-media {
+  background-color: #1877f2;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-bottom: 2px solid #e5e7eb;
+  box-shadow: 1px 1px 4px 0px #e5e7eb;
+}
+.social-meida-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+a {
+  text-decoration: none;
+}
+.navbar-logo {
+  width: 50px;
+}
+
+.logo-name {
+  color: #e5e7eb;
+  font-family: "Playwrite GB S", cursive;
+  font-weight: bold;
+}
+.search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 5;
+}
+.social-media-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-icon {
+  font-weight: bold;
+  left: 25px;
+  position: relative;
+  color: #000;
+}
+input[type="text"].navbar-search {
+  display: block;
+  width: 80%;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e5e7eb;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+}
+input[type="text"].navbar-search:focus {
+  outline: none;
+}
+.social-media-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+.chat-room,
+.user-settings {
+  padding: 2px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid #1877f2;
+  background-color: #e5e7eb;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.icon {
+  font-weight: 900;
+}
+@media (max-width: 767px) {
+  .social-meida-header {
+    max-height: 30px;
+  }
+  .social-meida-header {
+    margin-left: 0px;
+  }
+  .logo-name {
+    display: none;
+    font-size: 12px;
+  }
+  .navbar-logo {
+    width: 35px;
+  }
+}

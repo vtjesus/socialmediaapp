@@ -1,0 +1,151 @@
+.add-post {
+  padding: 30px 20px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+  max-width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px auto;
+  gap: 10px;
+  border-radius: 8px;
+}
+.new-posts-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.new-post-input {
+  width: 100%;
+  border: none;
+  flex-grow: 1;
+}
+.new-post-input:focus {
+  outline: none;
+}
+.img-container {
+  padding: 10px;
+}
+.img-sign-in {
+  border-radius: 50%;
+  max-width: 100%;
+  width: 50px !important;
+}
+.line {
+  display: block;
+  width: 95%;
+  height: 2px;
+  margin: 20px auto;
+  background-color: rgba(88, 88, 88, 0.2);
+}
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.share-btn {
+  font-family: "Playwrite GB S", cursive;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #1877f2;
+  color: #fff;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+}
+.share-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 5;
+  flex-grow: 1;
+  gap: 10px;
+  padding: 0 15px;
+}
+.share-icons div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #888;
+  font-weight: bold;
+  cursor: pointer;
+}
+.post-container {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 0 25px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.post-meta-data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.view-posts {
+  width: 90%;
+  margin: 0 auto;
+}
+.img-post {
+  width: 30px;
+  border-radius: 50%;
+}
+.post-text {
+  margin: 20px 0;
+}
+.post-date {
+  color: #a6a7a9;
+  padding-bottom: 10px;
+}
+.post-name {
+  font-weight: bolder;
+}
+
+.delete-trash {
+  margin-left: auto;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+}
+.line {
+  width: 100%;
+  margin: 10px auto;
+}
+@media (max-width: 767px) {
+  ::placeholder {
+    font-size: 12px;
+  }
+  .post-container {
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0 0 10px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .post-container-all {
+    all: unset;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+  .add-post {
+    padding: 10px;
+  }
+  .view-posts {
+    width: 95%;
+  }
+  .share-btn {
+    font-size: 12px;
+    padding: 5px 20px;
+  }
+  .share-icons div small {
+    display: none;
+  }
+}

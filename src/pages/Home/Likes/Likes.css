@@ -1,0 +1,43 @@
+.likes-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-weight: bolder;
+}
+.btn-like {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1877f2;
+}
+.btn-like svg {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-like:focus svg {
+  animation-name: likes;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  /* animation-direction: revers; */
+}
+.likes-number {
+  color: rgba(88, 88, 88, 0.8);
+  font-size: smaller;
+}
+.label-like {
+  padding: 0;
+}
+
+@keyframes likes {
+  0%,
+  100% {
+    transform: auto;
+  }
+  50% {
+    transform: scale(1.4);
+  }
+}
